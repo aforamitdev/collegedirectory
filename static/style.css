@@ -1,0 +1,97 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    background: #f3f3f3;
+    background-image: url("img/size.png") ;
+     background-repeat: no-repeat;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.loginwid{
+    width: 28%;
+    margin-top: 3%;
+    margin-left: 36%;
+}
+@media (max-width: 992px) {  .rounded-circle{width: 70px;
+    height: 70px;
+    margin-left: 100px;
+    margin-top: -34px;
+    border: 1px solid #f4f4f4} .loginwid{width: 100%;margin-left:0px;}  }
+
+
+
+@media (max-width: 992px) {  .reg{width: 100%;margin-left:0px;}}
+
+.jumbotron-fluid{opacity: 0.8;
+}
+.container {
+    width: 95%;
+    min-height: 100%;
+    background: #f4f4f4;
+    margin: auto;
+    padding: 10px;
+}
+.round{
+    border-radius: 50%;
+}
+@media (min-width: 992px) {.card {width:100%;
+}
+   .rounded-circle{width: 70px;
+    height: 70px;
+    margin-left: 100px;
+    margin-top: -34px;
+    border: 1px solid #f4f4f4}
+}
+.card-text > p{
+    margin-top: -18px;
+}
+.card{
+    margin: 5px;
+}
+.asd{
+    width: 25%;
+    float: left;
+}
+.mainbody{
+    width: 73%;
+    background-color: #3A7734;
+    height: 100%;
+    float: right;
+    margin-top: 6px;
+    border-radius: 2px;
+}
+.collegedetail{margin:10px;}
+.side-conatiner{
+    width: 30%;
+}
+.media img {
+    width: 30px;
+    height: 30px;
+}
+.w-100{    margin: 25px;
+}
+.headimg img{
+    margin-top:15px;
+}
+.navbar-right nav-link{
+    color:blue;
+}
+.footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+
+}
+.containerindex{
+    margin-top: -30px;
+}
+.indextext{
+        margin: 32px;
+}
