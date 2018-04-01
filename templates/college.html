@@ -1,0 +1,10 @@
+{%extends "layout.html"%}
+{% block body %}
+
+  <h1>colleges in {{data1}}</h1>
+
+
+   {% for data in clocation %}
+      <li class="list-group-item"><a href="data/{{data.nameofc}}">{{data.nameofc}}</a></li>
+    {% endfor %}
+{% endblock %}
