@@ -10,20 +10,21 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="aboutus">About Us </a>
+        <a class="nav-link" href="/aboutus">About Us </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="contactus">Contact US</a>
-      </li>
+        <a class="nav-link" href="/contactus">Contact US</a>
+      </li></ul></div>
 
-        <div class="nav navbar-right">
+        <div class="nav navbar-nav navbar-right">
         {%if session.logged_in%}
-          <li><a class="nav-link" href="logout">logout</a></li>
+          <li><a class="nav-link" href="/logout">logout</a></li>
+          <li><a class="nav-link" href="/myprofile">My Profile</a></li>
+
         {%else%}
       <li><a class="nav-link" href="register">Register</a></li>
       <li><a class="nav-link" href="login">Login</a></li>
-        {%endif%}
+          {%endif%}</div>
 
-        </div></ul>
 
   </div></nav>

@@ -1,10 +1,26 @@
 {%extends "layout.html"%}
-{% block body %}
+{%block body%}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+        <h3>Welcome <small>{{session.username}}</small></h3>
+      <div class="card ">
+				<img class="card-img-top" src="{{ url_for('static', filename='img/size.png')}}" alt="Card image cap">
+				<h4 class="card-title text-center">{{session.username}}</h4>
+          <div class="card-header">Student Details</div>
 
-  <h1>colleges in {{data1}}</h1>
+                <div class="card-body">
+					<p class="card-text">asd</p>
+				</div>
+			</div>
+    </div>
+<div class="col-sm-8">
+    <h1>colleges in {{data1}}</h1>
+			{% for data in clocation %}
+			<li class="list-group-item"><a href="data/{{data.nameofc}}">{{data.nameofc}}</a></li>
+			{% endfor %}
+		    </div>
+	</div>
+</div>
 
-
-   {% for data in clocation %}
-      <li class="list-group-item"><a href="data/{{data.nameofc}}">{{data.nameofc}}</a></li>
-    {% endfor %}
 {% endblock %}

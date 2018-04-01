@@ -1,10 +1,25 @@
 {%extends "layout.html"%}
 {%block body%}
-<h1>choose the city you want to search college in </h1>
-  <ul class="list-group">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+        <h3>Welcome <small>{{session.username}}</small></h3>
+      <div class="card ">
+				<img class="card-img-top" src="../static/img/size.png" alt="Card image cap">
+				<h4 class="card-title text-center">{{session.username}}</h4>
+          <div class="card-header">Student Details</div>
+
+                <div class="card-body">
+					<p class="card-text">asd</p>
+				</div>
+			</div>
+    </div>
+<div class="col-sm-8">
+    <h3>choose the city you want to search college in </h3>
     <ul class="list-group">
       <li class="list-group-item"><a href="/college/mumbai">MUMBAI</a></li>
         <li class="list-group-item"><a href="/college/delhi">DELHI</a></li>
         <li class="list-group-item"><a href="/college/pune">PUNE</a></li>
-            </ul>
+    </ul></div></div></div>
+
 {%endblock%}

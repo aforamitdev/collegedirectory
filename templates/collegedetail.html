@@ -1,27 +1,66 @@
 {%extends "layout.html"%}
 {% block body %}
+<div class="media"><div class="headimg">
+    <img class="align-self-start mr-3" src="{{ url_for('static', filename='img/college.ico')}}" alt="ads"></div>
+					<div class="media-body">
+<div class="collegename">
+	<h1>{{passcolleged.nameofc}}<small>{{passcolleged.city}}</small></h1>
+</div></div></div>
+<div class="jumbotron jumbotron-fluid">
+
+		<div class="row">
+			<div class="col">
+				<div class="media">
+					<img class="align-self-start mr-3" src="{{ url_for('static', filename='img/map.png')}}" alt="ads">
+					<div class="media-body">
+						<h5>Location :{{passcolleged.city}}</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="col">
+					<div class="media">
+						<img class="align-self-start mr-3" src="{{ url_for('static', filename='img/dept.png')}}" alt="ads">
+						<div class="media-body">
+							<h5>Deptments <br>{{passcolleged.dept}}</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="col">
+					<div class="media">
+						<img class="align-self-start mr-3" src="{{ url_for('static', filename='img/marks.png')}}" alt="ads">
+						<div class="media-body">
+							<h5>last year cut of marks <br>{{passcolleged.lastyearc}}</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w-100"></div>
+			<div class="col"><div class="col">
+					<div class="media">
+						<img class="align-self-start mr-3" src="{{ url_for('static', filename='img/fac.png')}}" alt="ads">
+						<div class="media-body">
+							<h5>Faclities <br>{{passcolleged.faclity}}</h5>
+						</div>
+					</div>
+				</div>
+            </div>
+			<div class="col"><div class="col">
+					<div class="media">
+						<img class="align-self-start mr-3" src="{{ url_for('static', filename='img/est.png')}}" alt="ads">
+						<div class="media-body">
+							<h5>Year Of Estiblishment <br>{{passcolleged.yearpofest}}</h5>
+						</div>
+					</div>
+				</div></div>
+            <div class="col">Column</div>
+
+		</div>
+	</div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <h1>{{passcolleged.nameofc}}</h1>
-   <h1>{{passcolleged.city}}</h1>
- <h1>{{passcolleged.location}}</h1>
- <h1>{{passcolleged.faclity}}</h1>
- <h1>{{passcolleged.lastyearc}}</h1>
- <h1>{{passcolleged.yearpofest}}</h1>
- <h1>{{passcolleged.dept}}</h1>
 
 {%endblock%}
